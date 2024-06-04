@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/style.scss">
+    <link rel="short icon" href="favicon.png">
+    <title>Document</title>
+
+</head>
+<body style="background-image: url('./images/summer-bg.jpg')">
+<div class="weather">
+    <h2 class="weather__title">Weather sounds</h2>
+    <div class="weather__box">
+        <div class="weather__block weather__block_first">
+            <div class="weather__pic">
+                <img src="./images/summer-bg.jpg" alt="" class="weather__img">
+            </div>
+            <div class="weather__center ">
+                <audio class="weather__audio" controls src=""></audio>
+                <img src="./icons/sun.svg" alt="">
+            </div>
+        </div>
+        <div class="weather__block weather__block_second">
+            <div class="weather__pic">
+                <img src="images/rainy-bg.jpg" alt="" class="weather__img">
+            </div>
+            <div class="weather__center">
+                <audio class="weather__audio" controls src=""></audio>
+                <img src="./icons/cloud-rain.svg" alt="">
+            </div>
+        </div>
+        <div class="weather__block weather__block_third">
+            <div class="weather__pic">
+                <img src="./images/winter-bg.jpg" alt="" class="weather__img">
+            </div>
+            <div class="weather__center">
+                <audio class="weather__audio" controls src=""></audio>
+                <img src="./icons/cloud-snow.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <label class="weather__label">
+        <input class="weather__range" id="range" min="0" max="100" value="0" type="range">
+        <span class="weather__span">0</span>
+    </label>
+</div>
+
+</body>
+</html>
